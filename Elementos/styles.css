@@ -1,0 +1,40 @@
+
+/*hay 2 tipos de elementos
+elementos de tipo bloque "block"
+    encabezado 
+    parrafo
+    div, article, section, header, footer, aside, table, p, video, ul, ol, 
+    h1,h2,h3,h4,h5, h6.
+    abarcan el 100% del espacio que tengan disponible
+    si tienen espacio NO se colocan uno a la derecha del otro
+
+elementos de tipo linea "inline"
+    enlaces, a, span, img, b, i, small, cite, code, em, strong, br, script,
+    button, input, select, textarea, label.
+    solo abarcan el espacio que necesitan y no se les pueden dar 
+    ciertas propiedades como el padding, width, height
+    si tienen espacio SI se colocan uno a la derecha del otro*/
+
+body {
+    background: #f2f2f2;
+    font-family: Arial;
+
+}
+
+h1, p, div {
+    background: gray;
+    padding:10px ;
+    width: 500px;
+    display: inline-block; /* inline-block nos permite modificar propiedades*/
+    /*display: block; se encuentra por defecto*/
+}
+
+a {
+    color: white;
+    background: black;
+    display: inline-block; /* inline-block nos permite modificar propiedades*/
+    /*display: inline; se encuentra por defecto*/
+    /*display: flex;*/
+    padding: 10px;
+    height: 50px;
+}
